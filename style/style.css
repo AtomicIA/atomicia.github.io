@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parallax{
+    background-image: url('../img/bg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100;
+  }
+  
+  .parallax img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  @media only screen and (max-width: 768px) {
+  
+    body{
+      overflow-x: hidden;
+    }
+  
+    .parallax img{
+      height: 100vh;
+      width: 100vw;
+      scale: 0.75;
+    }
+  }
